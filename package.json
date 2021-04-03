@@ -1,17 +1,21 @@
 {
-  "name": "sample-polkadotjs-typegen",
+  "name": "pacificstore-polkadotjs-typegen",
   "version": "0.0.1",
   "description": "A sample using @polkadot/typegen to generate type definitions",
   "main": "index.js",
-  "repository": "https://github.com/jacogr/sample-polkadotjs-typegen",
   "author": "Jaco Greeff <jacogr@gmail.com>",
   "license": "The Unlicense",
   "private": true,
+
   "scripts": {
     "build": "yarn generate:defs && yarn generate:meta",
     "generate:defs": "ts-node --skip-project node_modules/.bin/polkadot-types-from-defs --package pacificstore-polkadotjs-typegen/interfaces --input ./src/interfaces",
     "generate:meta": "ts-node --skip-project node_modules/.bin/polkadot-types-from-chain --package pacificstore-polkadotjs-typegen/interfaces --endpoint ./pacific.json --output ./src/interfaces --strict",
     "lint": "tsc --noEmit --pretty"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlbos/pacificstore-typegen.git"
   },
   "dependencies": {
     "@polkadot/api": "^4.3.1",

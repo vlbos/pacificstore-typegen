@@ -8,7 +8,7 @@ import './interfaces/augment-types';
 import type { OrderId } from 'pacificstore-polkadotjs-typegen/interfaces';
 
 // external imports
-import   {ApiPromise}  from '@polkadot/api';
+import  {ApiPromise}  from '@polkadot/api';
 import  {createType}  from '@polkadot/types';
 // import type { Codec } from '@polkadot/types/types';
 import { stringToU8a} from '@polkadot/util';
